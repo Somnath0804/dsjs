@@ -1,0 +1,394 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Anushka 🐱💕</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Baloo 2', cursive;
+    background: linear-gradient(135deg, #fff0f5, #fce4ec, #f8e8ff);
+    color: #5b4655;
+}
+
+/* Floating hearts */
+.heart {
+    position: fixed;
+    bottom: -50px;
+    font-size: 22px;
+    opacity: 0.7;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Main container */
+.container {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 45px 25px;
+}
+
+.cat {
+    font-size: 90px;
+    animation: catBounce 2.5s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes catBounce {
+    0%, 100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(3deg);
+    }
+}
+
+.small-text {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #9a7187;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(42px, 9vw, 75px);
+    color: #d85b86;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #806174;
+}
+
+/* Card */
+.card {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255,255,255,0.9);
+    border-radius: 30px;
+    padding: 35px 30px;
+    margin: 25px 0;
+    box-shadow: 0 15px 40px rgba(180, 110, 145, 0.15);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #d45c84;
+    margin-bottom: 15px;
+}
+
+.message {
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+/* Cat family */
+.cats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.cat-box {
+    background: #fff;
+    border-radius: 25px;
+    padding: 18px 25px;
+    box-shadow: 0 8px 20px rgba(160,100,130,0.12);
+    font-size: 55px;
+    transition: 0.3s;
+}
+
+.cat-box:hover {
+    transform: translateY(-8px) rotate(3deg);
+}
+
+/* Button */
+button {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #e9799d, #c96be5);
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(205,100,150,0.25);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+/* Hidden message */
+#secret {
+    display: none;
+    margin-top: 25px;
+    font-size: 21px;
+    line-height: 1.8;
+    animation: appear 0.8s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Promise section */
+.promise {
+    background: linear-gradient(135deg, #ffe4ef, #f4dcff);
+}
+
+.promise p {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 35px 10px;
+    font-size: 18px;
+    color: #927080;
+}
+
+.paw {
+    font-size: 24px;
+}
+
+/* Mobile */
+@media(max-width:600px) {
+    .card {
+        padding: 28px 20px;
+    }
+
+    .message,
+    .promise p {
+        font-size: 19px;
+    }
+
+    .cat {
+        font-size: 75px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<div class="heart" style="left:8%; animation-duration:8s;">💗</div>
+<div class="heart" style="left:20%; animation-duration:11s;">💕</div>
+<div class="heart" style="left:35%; animation-duration:9s;">💖</div>
+<div class="heart" style="left:52%; animation-duration:12s;">💗</div>
+<div class="heart" style="left:68%; animation-duration:10s;">💕</div>
+<div class="heart" style="left:84%; animation-duration:13s;">💖</div>
+
+<div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="cat">🐱</div>
+
+        <div class="small-text">
+            A tiny little place made just for you...
+        </div>
+
+        <h1>Anushka 💕</h1>
+
+        <div class="subtitle">
+            You don't have to be alone. 🐾
+        </div>
+    </section>
+
+    <!-- Main message -->
+    <div class="card">
+        <h2>Hey Anushka... 🐱</h2>
+
+        <p class="message">
+            I know you're not feeling okay right now.
+            <br><br>
+
+            So please don't keep everything inside
+            and don't feel like you have to deal with
+            everything by yourself.
+            <br><br>
+
+            <strong>You are not alone. 🤍</strong>
+            <br>
+            I'm here whenever you need someone.
+        </p>
+    </div>
+
+    <!-- Cats -->
+    <div class="cats">
+        <div class="cat-box">🐱</div>
+        <div class="cat-box">😺</div>
+        <div class="cat-box">😸</div>
+        <div class="cat-box">😽</div>
+    </div>
+
+    <!-- Comfort -->
+    <div class="card promise">
+        <h2>A Little Reminder 🌷</h2>
+
+        <p>
+            You don't always have to be strong.
+            <br>
+            It's okay to have bad days.
+            <br>
+            It's okay to cry.
+            <br>
+            It's okay to feel tired.
+            <br><br>
+
+            Just take a little breath...
+            🫂
+            <br><br>
+
+            And remember —
+            <strong>someone is always here to listen.</strong>
+        </p>
+    </div>
+
+    <!-- Secret message -->
+    <div class="card">
+        <h2>One More Thing... 🐾</h2>
+
+        <button onclick="showMessage()">
+            Tap the kitty 🐱
+        </button>
+
+        <div id="secret">
+            🌸 You deserve peaceful days,
+            genuine smiles and lots of happiness.
+            <br><br>
+
+            And whenever the world feels a little too heavy,
+            you can always come here and remember:
+            <br><br>
+
+            <strong>
+                "You don't have to face everything alone." 💗
+            </strong>
+            <br><br>
+
+            🐱 + 🫂 + 💕 = A little better day
+        </div>
+    </div>
+
+    <footer>
+        Made with a little love, a little craziness,
+        and lots of cats 🐾💕
+        <br><br>
+        🐱 🐱 🐱
+    </footer>
+
+</div>
+
+<script>
+
+function showMessage() {
+    const secret = document.getElementById("secret");
+
+    if (secret.style.display === "block") {
+        secret.style.display = "none";
+    } else {
+        secret.style.display = "block";
+
+        // Create heart burst
+        for(let i = 0; i < 12; i++) {
+
+            const heart = document.createElement("div");
+
+            heart.innerHTML =
+                ["💗","💕","💖","🐾"][Math.floor(Math.random()*4)];
+
+            heart.style.position = "fixed";
+            heart.style.left = "50%";
+            heart.style.top = "55%";
+            heart.style.fontSize = "25px";
+            heart.style.zIndex = "999";
+            heart.style.pointerEvents = "none";
+
+            document.body.appendChild(heart);
+
+            const x = (Math.random() - 0.5) * 400;
+            const y = (Math.random() - 0.5) * 350;
+
+            heart.animate(
+                [
+                    {
+                        transform: "translate(-50%, -50%) scale(0)",
+                        opacity: 1
+                    },
+                    {
+                        transform:
+                        `translate(${x}px, ${y}px) scale(1.3)`,
+                        opacity: 0
+                    }
+                ],
+                {
+                    duration: 1200,
+                    easing: "ease-out"
+                }
+            );
+
+            setTimeout(() => heart.remove(), 1200);
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
+```
